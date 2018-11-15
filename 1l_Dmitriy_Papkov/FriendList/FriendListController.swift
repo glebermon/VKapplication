@@ -51,4 +51,8 @@ class FriendListController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "selectHuman",sender: nil)
     }
+    
+    func charSelected(buttonValue: String) {
+        //
+    }
 }

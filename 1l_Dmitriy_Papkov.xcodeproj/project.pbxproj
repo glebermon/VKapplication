@@ -24,6 +24,11 @@
 		1F561B252194BA84003AB8B4 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F561B242194BA84003AB8B4 /* Group.swift */; };
 		1F561B272194BA92003AB8B4 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F561B262194BA92003AB8B4 /* Friend.swift */; };
 		1F561B292194C71E003AB8B4 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F561B282194C71E003AB8B4 /* Generator.swift */; };
+		1F5C3DEB219D603F00EE6946 /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C3DEA219D603F00EE6946 /* ProfileIcon.swift */; };
+		1F5C3DED219D6ADA00EE6946 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C3DEC219D6ADA00EE6946 /* LikeControl.swift */; };
+		1F5C3DEF219D761D00EE6946 /* WeekDayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C3DEE219D761D00EE6946 /* WeekDayPicker.swift */; };
+		1F5C3DF1219D8D7600EE6946 /* AlphabetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C3DF0219D8D7600EE6946 /* AlphabetPicker.swift */; };
+		1F5C3DF3219D8F2A00EE6946 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C3DF2219D8F2900EE6946 /* LikesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		1F561B242194BA84003AB8B4 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		1F561B262194BA92003AB8B4 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		1F561B282194C71E003AB8B4 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		1F5C3DEA219D603F00EE6946 /* ProfileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIcon.swift; sourceTree = "<group>"; };
+		1F5C3DEC219D6ADA00EE6946 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		1F5C3DEE219D761D00EE6946 /* WeekDayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayPicker.swift; sourceTree = "<group>"; };
+		1F5C3DF0219D8D7600EE6946 /* AlphabetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetPicker.swift; sourceTree = "<group>"; };
+		1F5C3DF2219D8F2900EE6946 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		1F0EC8C72152B53100E491DF /* 1l_Dmitriy_Papkov */ = {
 			isa = PBXGroup;
 			children = (
+				1F5C3DE9219D5F8F00EE6946 /* CustomElements */,
 				1F561B232194BA67003AB8B4 /* Model */,
 				1F561B122194B563003AB8B4 /* FriendPhoto */,
 				1F561B112194B559003AB8B4 /* FriendList */,
@@ -89,6 +100,7 @@
 				1F0EC8CF2152B53300E491DF /* Assets.xcassets */,
 				1F0EC8D12152B53300E491DF /* LaunchScreen.storyboard */,
 				1F0EC8D42152B53300E491DF /* Info.plist */,
+				1F5C3DF2219D8F2900EE6946 /* LikesViewController.swift */,
 			);
 			path = 1l_Dmitriy_Papkov;
 			sourceTree = "<group>";
@@ -146,6 +158,17 @@
 				1F561B282194C71E003AB8B4 /* Generator.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1F5C3DE9219D5F8F00EE6946 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C3DEA219D603F00EE6946 /* ProfileIcon.swift */,
+				1F5C3DEC219D6ADA00EE6946 /* LikeControl.swift */,
+				1F5C3DEE219D761D00EE6946 /* WeekDayPicker.swift */,
+				1F5C3DF0219D8D7600EE6946 /* AlphabetPicker.swift */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,13 +244,18 @@
 			files = (
 				1F561B1C2194B96C003AB8B4 /* GroupCell.swift in Sources */,
 				1F561B1A2194B6DE003AB8B4 /* NewGroupController.swift in Sources */,
+				1F5C3DF1219D8D7600EE6946 /* AlphabetPicker.swift in Sources */,
+				1F5C3DED219D6ADA00EE6946 /* LikeControl.swift in Sources */,
 				1F561B142194B665003AB8B4 /* FriendListController.swift in Sources */,
 				1F4BA54021976ED000FF6DB9 /* GroupSearch.swift in Sources */,
 				1F4BA53E219765A300FF6DB9 /* FriendPhotoCollection.swift in Sources */,
 				1F561B272194BA92003AB8B4 /* Friend.swift in Sources */,
 				1F561B182194B6CC003AB8B4 /* GroupController.swift in Sources */,
 				1F561B202194B9DD003AB8B4 /* FriendCell.swift in Sources */,
+				1F5C3DEB219D603F00EE6946 /* ProfileIcon.swift in Sources */,
+				1F5C3DEF219D761D00EE6946 /* WeekDayPicker.swift in Sources */,
 				1F4BA53C2197652100FF6DB9 /* PhotoCell.swift in Sources */,
+				1F5C3DF3219D8F2A00EE6946 /* LikesViewController.swift in Sources */,
 				1F561B1E2194B9BD003AB8B4 /* NewGroupCell.swift in Sources */,
 				1F561B252194BA84003AB8B4 /* Group.swift in Sources */,
 				1F0EC8CB2152B53100E491DF /* LoginViewController.swift in Sources */,
