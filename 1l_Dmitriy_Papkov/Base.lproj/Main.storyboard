@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="_l_Dmitriy_Papkov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeK-pS-T8C">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icS-T7-6O3">
+                                        <rect key="frame" x="10" y="130" width="300" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmk-R4-YjL">
+                                                <rect key="frame" x="0.0" y="159" width="300" height="30"/>
+                                                <state key="normal" title="Войти"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-kY-6rC">
+                                                <rect key="frame" x="0.0" y="20" width="300" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyc-mR-iQQ">
+                                                <rect key="frame" x="0.0" y="69" width="300" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMQ-nP-SDh">
+                                                <rect key="frame" x="0.0" y="109" width="300" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="5ab-uG-LYw"/>
+                                            <constraint firstItem="OLB-kY-6rC" firstAttribute="top" secondItem="icS-T7-6O3" secondAttribute="top" constant="20" id="6OB-HW-o0U"/>
+                                            <constraint firstAttribute="trailing" secondItem="wmk-R4-YjL" secondAttribute="trailing" id="8h6-hg-ads"/>
+                                            <constraint firstItem="wyc-mR-iQQ" firstAttribute="top" secondItem="OLB-kY-6rC" secondAttribute="bottom" constant="20" id="D1J-v4-2GI"/>
+                                            <constraint firstItem="wmk-R4-YjL" firstAttribute="leading" secondItem="icS-T7-6O3" secondAttribute="leading" id="Dgp-Nw-kp0"/>
+                                            <constraint firstAttribute="trailing" secondItem="OLB-kY-6rC" secondAttribute="trailing" id="DqB-1V-G0D"/>
+                                            <constraint firstAttribute="height" constant="200" id="R2o-oZ-uZZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="wyc-mR-iQQ" secondAttribute="trailing" id="WNt-Te-0iH"/>
+                                            <constraint firstItem="wmk-R4-YjL" firstAttribute="top" secondItem="iMQ-nP-SDh" secondAttribute="bottom" constant="20" id="YXj-fD-cdi"/>
+                                            <constraint firstItem="iMQ-nP-SDh" firstAttribute="top" secondItem="wyc-mR-iQQ" secondAttribute="bottom" constant="10" id="c2R-DM-fT4"/>
+                                            <constraint firstAttribute="trailing" secondItem="iMQ-nP-SDh" secondAttribute="trailing" id="ilj-Vs-eVP"/>
+                                            <constraint firstItem="wyc-mR-iQQ" firstAttribute="leading" secondItem="icS-T7-6O3" secondAttribute="leading" id="iqq-X0-LYT"/>
+                                            <constraint firstItem="OLB-kY-6rC" firstAttribute="leading" secondItem="icS-T7-6O3" secondAttribute="leading" id="mnY-lB-y1O"/>
+                                            <constraint firstItem="iMQ-nP-SDh" firstAttribute="leading" secondItem="icS-T7-6O3" secondAttribute="leading" id="odm-dS-wlo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="icS-T7-6O3" secondAttribute="bottom" constant="260" id="3PP-e1-thz"/>
+                                    <constraint firstItem="icS-T7-6O3" firstAttribute="centerY" secondItem="JeK-pS-T8C" secondAttribute="centerY" id="MDU-aD-HR5"/>
+                                    <constraint firstAttribute="trailing" secondItem="icS-T7-6O3" secondAttribute="trailing" constant="68" id="cKw-nU-tdd"/>
+                                    <constraint firstItem="icS-T7-6O3" firstAttribute="centerX" secondItem="JeK-pS-T8C" secondAttribute="centerX" id="sUj-fh-nJD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JeK-pS-T8C" secondAttribute="trailing" id="0Xf-mv-wt9"/>
+                            <constraint firstItem="JeK-pS-T8C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T7F-HP-pgk"/>
+                            <constraint firstItem="JeK-pS-T8C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKq-vJ-tCI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JeK-pS-T8C" secondAttribute="bottom" id="qRb-0I-Ovo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginField" destination="wyc-mR-iQQ" id="ZCb-bK-qHL"/>
+                        <outlet property="passwordField" destination="iMQ-nP-SDh" id="xeo-PP-23T"/>
+                        <outlet property="scrollView" destination="JeK-pS-T8C" id="fHQ-8z-rQi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="132.5"/>
+        </scene>
+    </scenes>
+</document>
