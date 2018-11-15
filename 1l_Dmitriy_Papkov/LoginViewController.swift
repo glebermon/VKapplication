@@ -57,5 +57,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.scrollView.contentInset = UIEdgeInsets.zero
         self.scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
     }
+    
+    @IBAction func checkLogin() {
+        if loginField.text == "admin" && passwordField.text == String(123456) {
+            performSegue(withIdentifier: "loginSuccess", sender: nil)
+        }else {
+            let alert = UIAlertController(
+                title: "Ошибка",
+                message: """
+                Поробуйте
+
+                Логин: admin
+                Пароль: 123456
+                """,
+                preferredStyle: UIAlertController.Style.alert
+            )
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }
 
